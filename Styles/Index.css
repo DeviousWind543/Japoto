@@ -16,7 +16,7 @@ body, html {
 
 /* Header */
 .header-wrapper {
-    background-color: #32cd32; /* Verde lima */
+    background-color: #4CAF50; /* Verde lima */
     color: white;
     text-align: center;
     padding: 0.5rem 0 1.5rem 0;
@@ -157,7 +157,7 @@ body, html {
 
 /* Footer */
 .footer {
-    background-color: #06b906;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 1rem;

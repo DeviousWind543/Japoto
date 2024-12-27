@@ -1,0 +1,69 @@
+/* Estilos para pantallas grandes (por defecto) */
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+    .header-wrapper {
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 80%; /* Ajustar tamaño de imagen */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        height: 70px;
+    }
+
+    .hero-text h2 {
+        font-size: 1rem; /* Reduce el tamaño del título */
+    }
+
+    .btn-primary {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-bar ul {
+        gap: 0.5rem;
+    }
+}
+
+/* Ajustes para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .header-wrapper {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}

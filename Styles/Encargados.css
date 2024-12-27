@@ -9,7 +9,7 @@ body, html {
 
 /* Header */
 .header-wrapper {
-    background-color: #32cd32;
+    background-color: #4CAF50;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -153,9 +153,36 @@ body, html {
 
 /* Footer */
 .footer {
-    background-color: #06b906;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .member {
+        width: 100%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        height: 60px;
+    }
+
+    .team {
+        gap: 1.5rem;
+    }
+
+    .member h3 {
+        font-size: 1.2rem;
+    }
 }
