@@ -1,0 +1,186 @@
+/* General Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.header-wrapper {
+    background-color: #32cd32; /* Verde lima */
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0 1.5rem 0;
+    flex-shrink: 0;
+}
+
+.heart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem; /* Espaciado más compacto */
+}
+
+.logo {
+    height: 100px;
+}
+
+.title-wrapper {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.title + h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #e8f5e9;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    margin-top: 1rem; /* Espaciado extra para separar del título */
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar ul li a.active {
+    background-color: white;
+    color: #32cd32;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el activo */
+}
+
+.nav-bar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    color: #32cd32;
+}
+
+/* Main Container */
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 50%;
+    padding: 0.5rem;
+}
+
+.hero-text h2 {
+    color: #32cd32;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text p {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #32cd32;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #28a428;
+}
+
+.hero-img {
+    width: 35%;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Nueva sección para la imagen de humus */
+.center-section {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.humus-img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #06b906;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

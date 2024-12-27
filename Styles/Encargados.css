@@ -1,0 +1,161 @@
+/* General Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f9f9;
+}
+
+/* Header */
+.header-wrapper {
+    background-color: #32cd32;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 80px;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar ul li a.active {
+    background-color: white;
+    color: #32cd32;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #32cd32;
+}
+
+/* Socios Section */
+#encargados {
+    padding: 2rem;
+    text-align: center;
+}
+
+#encargados h2 {
+    color: #32cd32;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.member {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.member-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #32cd32;
+}
+
+.member-info p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Role Icon */
+.role-icon {
+    font-size: 2rem;
+    color: #32cd32;
+    margin-left: auto;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+/* Botón CV */
+.btn-download {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #32cd32; /* Verde lima */
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #28a428; /* Verde más oscuro */
+}
+
+/* Footer */
+.footer {
+    background-color: #06b906;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
